@@ -1,6 +1,6 @@
 package com.benr.coderswag.model
 
-class Category(private val title: String, val image: String) {
+class Category(val title: String, val image: String) {
 
     /**
      * When the Array Adapter uses our array of Category instances,
