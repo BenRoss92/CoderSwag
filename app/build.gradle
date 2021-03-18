@@ -1,6 +1,8 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    // Uncomment the following line to enable referencing UI elements in Kotlin files without using `findViewById` (by adding the Kotlin Android Extensions plugin):
+//    id 'kotlin-android-extensions'
 }
 
 android {
