@@ -10,6 +10,8 @@ import android.widget.TextView
 import com.benr.coderswag.R
 import com.benr.coderswag.model.Category
 
+// No longer being used - left here as guy in video didn't delete this file for some reason.
+// Replaced this class with the CategoryRecyclerAdapter.
 class CategoryAdapter(context: Context, categories: List<Category>) : BaseAdapter() {
     private val context = context
     private val categories = categories
