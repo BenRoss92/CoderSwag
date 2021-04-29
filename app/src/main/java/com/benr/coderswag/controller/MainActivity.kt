@@ -1,12 +1,12 @@
 package com.benr.coderswag.controller
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.ListView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.benr.coderswag.utilities.EXTRA_CATEGORY
 import com.benr.coderswag.R
-import com.benr.coderswag.adapters.CategoryAdapter
 import com.benr.coderswag.adapters.CategoryRecyclerAdapter
 import com.benr.coderswag.services.DataService
 
@@ -34,7 +34,14 @@ class MainActivity : AppCompatActivity() {
         val categories = DataService.categories
 
         // Instantiate our custom CategoryAdapter
-        adapter = CategoryRecyclerAdapter(this, categories)
+        adapter = CategoryRecyclerAdapter(this, categories) { category ->
+            // Start the new Products activity by creating an intent and targeting this activity
+            val productIntent = Intent(this, ProductsActivity::class.java)
+
+            // Pass the category title to the Products activity as an intent extra
+            productIntent.putExtra(EXTRA_CATEGORY, category.title)
+            startActivity(productIntent)
+        }
 
         // Get the RecyclerView that we want to display our category titles within
         val listView = findViewById<RecyclerView>(R.id.categoryListView)
