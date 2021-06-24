@@ -27,11 +27,8 @@ class ProductDetailActivity : AppCompatActivity() {
 
         // Dynamically add the product data to the Views in the activity_product_detail.xml layout
         productDetailImage.setImageResource(imageResourceId)
-
         productDetailName.text = product.title
-
         productDetailPrice.text = product.price
-        // TODO: Add product description property to set different product descriptions
-        // productDetailDescription.text =
+        productDetailDescription.text = product.description
     }
 }
