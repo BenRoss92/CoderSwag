@@ -6,7 +6,6 @@ Merchandise app from section 6 ('List and Recycler Views') of [Kotlin for Androi
 
 ## Implement
 
-- Introduce concept of having different product descriptions for each product item on the product detail page
 - Add a (UI only) 'ADD TO CART!' button as shown here: https://medium.com/devslopes-blog/exercise-show-me-the-product-eda7a469a3da
 
 ## Test

@@ -51,4 +51,15 @@
         app:layout_constraintVertical_bias="0.0"
         tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris luctus nisi nec porta semper. Praesent nisi odio, malesuada vel laoreet id, vulputate eget urna. Sed vel nisi et quam aliquet tristique. Nulla enim nunc, ultricies sit amet nisi et, faucibus tincidunt nisl. Suspendisse pulvinar mollis neque, id eleifend diam blandit ullamcorper. In ut erat sollicitudin, euismod nulla non, venenatis nulla. Fusce sagittis nunc vel suscipit ornare. Phasellus rhoncus nibh eu nunc dictum, sed suscipit nisl faucibus. Cras ultricies accumsan lacus, a porta diam volutpat nec. In hac habitasse platea dictumst. Sed consequat sem neque, vel lacinia ipsum ornare vehicula. Integer odio odio, sagittis egestas scelerisque eget, accumsan sit amet urna. Donec eget faucibus tellus. Mauris fringilla nunc pharetra maximus congue. Suspendisse tempus, mauris et maximus efficitur, nibh ligula facilisis eros, eget viverra justo neque et dolor.  " />
 
+    <Button
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/add_to_cart_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
