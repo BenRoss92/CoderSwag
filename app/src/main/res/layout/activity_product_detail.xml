@@ -8,47 +8,49 @@
 
     <ImageView
         android:id="@+id/productdetailimage"
-        android:layout_width="187dp"
-        android:layout_height="212dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        app:layout_constraintDimensionRatio="1"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintDimensionRatio="1:1"
         app:layout_constraintEnd_toStartOf="@+id/productdetailname"
-        app:layout_constraintHorizontal_bias="0.313"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/hat1" />
 
     <TextView
         android:id="@+id/productdetailname"
-        android:layout_width="157dp"
-        android:layout_height="20dp"
-        android:layout_marginTop="48dp"
-        android:layout_marginEnd="24dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="Devslopes Hoodie Gray" />
 
     <TextView
         android:id="@+id/productdetailprice"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="156dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/productdetailimage"
         app:layout_constraintTop_toBottomOf="@+id/productdetailname"
         tools:text="£12" />
 
     <TextView
         android:id="@+id/productdetaildescription"
-        android:layout_width="386dp"
-        android:layout_height="279dp"
-        android:layout_marginTop="24dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.56"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/productdetailimage"
-        app:layout_constraintVertical_bias="0.0"
         tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris luctus nisi nec porta semper. Praesent nisi odio, malesuada vel laoreet id, vulputate eget urna. Sed vel nisi et quam aliquet tristique. Nulla enim nunc, ultricies sit amet nisi et, faucibus tincidunt nisl. Suspendisse pulvinar mollis neque, id eleifend diam blandit ullamcorper. In ut erat sollicitudin, euismod nulla non, venenatis nulla. Fusce sagittis nunc vel suscipit ornare. Phasellus rhoncus nibh eu nunc dictum, sed suscipit nisl faucibus. Cras ultricies accumsan lacus, a porta diam volutpat nec. In hac habitasse platea dictumst. Sed consequat sem neque, vel lacinia ipsum ornare vehicula. Integer odio odio, sagittis egestas scelerisque eget, accumsan sit amet urna. Donec eget faucibus tellus. Mauris fringilla nunc pharetra maximus congue. Suspendisse tempus, mauris et maximus efficitur, nibh ligula facilisis eros, eget viverra justo neque et dolor.  " />
 
     <Button
