@@ -46,8 +46,8 @@ class CategoryRecyclerAdapter(private val context: Context, private val categori
         private val categoryImageElementId = R.id.categoryImage
 
         // Grab the Text and Image Views from the inflated single Category list item View
-        private val categoryTextView: TextView = itemView.findViewById<TextView>(categoryNameElementId)
-        private val categoryImageView: ImageView = itemView.findViewById<ImageView>(categoryImageElementId)
+        private val categoryTextView: TextView = itemView.findViewById(categoryNameElementId)
+        private val categoryImageView: ImageView = itemView.findViewById(categoryImageElementId)
 
         fun bindCategory(category: Category, context: Context) {
             // Get the image file path

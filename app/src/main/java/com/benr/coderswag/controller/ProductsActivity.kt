@@ -14,7 +14,7 @@ import com.benr.coderswag.utilities.EXTRA_PRODUCT_DETAIL
 
 class ProductsActivity : AppCompatActivity() {
 
-    lateinit var productsAdapter: ProductsAdapter
+    private lateinit var productsAdapter: ProductsAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
