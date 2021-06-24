@@ -1,5 +1,6 @@
 package com.benr.coderswag.controller
 
+import android.content.Intent
 import android.content.res.Configuration
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -9,6 +10,7 @@ import com.benr.coderswag.utilities.EXTRA_CATEGORY
 import com.benr.coderswag.R
 import com.benr.coderswag.adapters.ProductsAdapter
 import com.benr.coderswag.services.DataService
+import com.benr.coderswag.utilities.EXTRA_PRODUCT_DETAIL
 
 class ProductsActivity : AppCompatActivity() {
 
@@ -23,7 +25,13 @@ class ProductsActivity : AppCompatActivity() {
 
         val products = DataService.getProducts(categoryType!!)
 
-        productsAdapter = ProductsAdapter(this, products)
+        productsAdapter = ProductsAdapter(this, products) {
+            val productDetailIntent = Intent(this, ProductDetailActivity::class.java)
+
+            productDetailIntent.putExtra(EXTRA_PRODUCT_DETAIL, it)
+
+            startActivity(productDetailIntent)
+        }
 
         val productsListView = findViewById<RecyclerView>(R.id.productsListView)
         productsListView.adapter = productsAdapter

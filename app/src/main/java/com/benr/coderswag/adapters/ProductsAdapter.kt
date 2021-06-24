@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.benr.coderswag.R
 import com.benr.coderswag.model.Product
 
-class ProductsAdapter(private val context: Context, private val products: List<Product>): RecyclerView.Adapter<ProductsAdapter.ProductHolder>() {
+class ProductsAdapter(private val context: Context, private val products: List<Product>, private val itemClick: (Product) -> Unit): RecyclerView.Adapter<ProductsAdapter.ProductHolder>() {
 
     inner class ProductHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
 
@@ -32,6 +32,7 @@ class ProductsAdapter(private val context: Context, private val products: List<P
             productNameView.text = product.title
             // set the product price view to be the product's price
             productPriceView.text = product.price
+            itemView.setOnClickListener { itemClick(product) }
         }
     }
 
